@@ -11,7 +11,8 @@ module.exports = {
             '@js': path.resolve(__dirname, './src/assets/js'),
             '@css': path.resolve(__dirname, './src/assets/css'),
             '@img': path.resolve(__dirname, './src/assets/imgs'),
-            '@c': path.resolve(__dirname, './src/components')
+            '@c': path.resolve(__dirname, './src/components'),
+            '@api': path.resolve(__dirname, './src/api')
           }
         }
       }

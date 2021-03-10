@@ -76,21 +76,25 @@ export default {
   height: px2rem(46);
   background: #fff;
   box-shadow: 0 0 16px 0 rgba(0, 0, 0, 0.2);
-  border-top: 1px solid #e5e5e5;
+  border-top: 1px solid $lineColor;
   justify-content: space-around;
+
   &-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+
     &-img {
       width: px2rem(22);
       height: px2rem(22);
     }
+
     &-name {
       text-align: center;
       font-size: $fontSize;
       margin-top: px2rem(4);
+
       &-h {
         color: red;
       }

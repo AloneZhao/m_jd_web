@@ -1,7 +1,8 @@
 <template>
   <div class="main">
-    <div class="main-content"></div>
-    <component :is="currentComponentName"></component>
+    <div class="main-content">
+      <component :is="currentComponentName"></component>
+    </div>
     <tool-bar @onSelectCheck="onSelectCheck"></tool-bar>
   </div>
 </template>
@@ -35,10 +36,12 @@ export default {
   display: flex;
   flex-direction: column;
   width: 100%;
-  height: 100%;
+  height: 100vh;
   font-size: 32px;
   &-content {
     flex: 1;
+    overflow: hidden;
+    overflow-y: scroll;
   }
 }
 </style>
