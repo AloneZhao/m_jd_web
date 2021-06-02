@@ -4,6 +4,7 @@
       class="menu-options-item"
       v-for="(item, index) in menuOptionsData"
       :key="index"
+      @click="goTo()"
     >
       <img
         :src="item.icon"
@@ -72,6 +73,13 @@ export default {
           title: '全部'
         }
       ]
+    }
+  },
+  methods: {
+    goTo() {
+      this.$router.push({
+        name: 'goodList'
+      })
     }
   }
 }

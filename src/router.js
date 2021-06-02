@@ -10,6 +10,11 @@ export default new Router({
       path: '/',
       name: 'home',
       component: Main
+    },
+    {
+      path: '/goodsList',
+      name: 'goodList',
+      component: () => import('./views/goodsList/goodsList.vue')
     }
   ]
 })
